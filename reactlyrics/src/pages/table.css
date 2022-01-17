@@ -1,0 +1,79 @@
+body{
+    background-color: #25274d;
+}
+@keyframes slide{
+    0% {
+        transform: translatey(100px);
+    }
+    100% {
+        transform: translatey(0);
+    }
+}
+.card{
+    animation: slide 1s;
+}
+.contact{
+    padding: 4%;
+    height: 400px;
+    animation: slide 1s;
+}
+.special:hover{ 
+    background-color: rgb(7, 90, 214);
+}
+.col-md-3{
+    background: #ff9b00;
+    padding: 4%;
+    border-top-left-radius: 3.5rem;
+}
+.contact-info{
+    margin-top:10%;
+}
+.contact-info img{
+    margin-bottom: 10%;
+}
+.contact-info h4{
+    margin-bottom: 10%;
+    font-weight: lighter;
+}
+.col-md-9{
+    background: #fff;
+    
+    padding: 3%;
+    border-bottom-right-radius: 3.5rem;
+}
+.contact-form label{
+    font-weight:600;
+    text-align: left;
+    margin: 1%;
+}
+#add{
+    background: #25274d;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+#add:hover{
+    background: #555892;
+    box-shadow:2px 2px 4px 0px black;
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .col-md-9{
+        border-bottom-right-radius: 3.5rem;
+        border-top-right-radius: 0;
+    }
+    .col-md-3{
+        border-top-left-radius: 3.5rem;
+        border-bottom-left-radius: 0;
+    }
+    #add{
+        width: 100%;
+        border-bottom-right-radius: 3.5rem;
+    }
+    img{
+        height: 100%;
+        width: 50%;
+    }
+  }
+  
